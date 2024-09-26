@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <div class="consulta_notas">
+        <h2>Média das notas</h2>
+        <table>
+            <tr>
+                <th>Nome do aluno</th>
+                <th>Primeira nota</th>
+                <th>Segunda nota</th>
+                <th>Terceira nota</th>
+                <th>Média</th>
+                <th>Status</th>
+            </tr>
+            {% for pro in prod %}
+            <tr>
+                <td>{{pro.nome}}</td>
+                <td>{{pro.nota_1}}</td>
+                <td>{{pro.nota_2}}</td>
+                <td>{{pro.nota_3}}</td>
+                <td>{{pro.media}}</td>
+                <td>{{pro.status}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <!-- Botão para navegar de volta para a página inicial -->
+        <div>
+            <a href="/">
+                <button class="notas_enviar"><h4>Voltar</h4></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

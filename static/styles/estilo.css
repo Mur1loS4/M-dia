@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: greenyellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.informações{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: var(--fonte-primaria);
+    border: 3px solid black;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 7px #5e17eb;
+}
+
+.informações label{
+    color: black;
+    font-weight: 550;
+    padding-left: 5px;
+    padding-bottom: 4px;
+}
+
+.informações label#label_nome_aluno{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 10px;
+}
+
+.informações input[type="number"], 
+.informações input[type="text"]{
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: 0px 4px #5e17eb;
+    padding: 8px 13px;
+    border-color: #000000;
+}
+
+.informações input[type="number"]:hover,
+.informações input[type="text"]:hover,
+.informações input[type="number"]:focus,
+.informações input[type="text"]:focus{
+    background-color: white;
+}
+
+.notas_enviar{
+    margin-top: 70px;
+    color: black;
+    font-size: large;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 0px 4px #5e17eb;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.notas_enviar:hover{
+    background-color: #401799;
+    color: #ffffff;
+}
+
+.consulta_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 30px;
+    font-family: var(--fonte-primaria);
+}
+
+.consulta_notas h2{
+    padding: 10px 25px;
+    border: 3px solid black;
+    background-color: #ffffff;
+    box-shadow: 3px 3px blueviolet;
+    margin-bottom: 30px;
+}
+
+.consulta_notas table{
+    border: 3px solid black;
+    color: #ffffff;
+    box-shadow: 5px 5px blueviolet;
+}
+
+.consulta_notas th{
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: rgb(84, 8, 156);
+}
+
+.consulta_notas td{
+    padding: 10px 25px;
+    background-color: blueviolet;
+    font-weight: 700;
+}
